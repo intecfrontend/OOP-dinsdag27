@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person() { //this is the person to who the function refers, Person is a class
+            this.greet = function () {
+                console.log("hi")
+            }
+        }
+        var john = new Person();
+        john.greet();
+        var jane = new Person();
+        jane.greet();
+    </script>
+</body>
+
+</html>

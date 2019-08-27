@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<body>
+    <script type="text/javascript">
+        var d1 = new Date("12/12/2018");
+        var d2 = new Date("12/12/2019");
+        var dateString = formatDate(d1);
+        //   dateString.valueOf();
+        document.write('Europrim: ' + dateString);
+
+        var timeDiff = d2.getTime() - d1.getTime();
+        var DaysDiff = timeDiff / (1000 * 3600 * 24);
+
+        document.write('<br><br>' + "Days of difference between <br>" +
+            d1 + "<br> and <br>" + d2 + " is:<br><br> " + DaysDiff + " days");
+
+        document.write('<br><br>' + 'Eurodate: ' + dateString);
+
+        function formatDate(date) {
+            return date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
+
+
+        }
+    </script>
+
+</body>
+
+</html>
